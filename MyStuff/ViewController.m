@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Brayden Adams. All rights reserved.
 //
 
+
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)viewWebsite:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.byuisys.com"]];
 }
 
 @end
